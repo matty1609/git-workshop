@@ -27,6 +27,12 @@ Build the application via `tsc` or
 npm run build
 ```
 
+Execute the application via `node ./dist/index.js` or
+
+```bash
+npm start
+```
+
 Test the application via `npx jest` or
 
 ```bash
