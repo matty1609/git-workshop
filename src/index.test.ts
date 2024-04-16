@@ -10,4 +10,8 @@ describe("sum", () => {
   test("should add up floats", () => {
     expect(sum([1 / 3, 0.5])).toBe(0.83);
   });
+
+  test("should add up negative numbers", () => {
+    expect(sum([-1, 1, -5])).toBe(-5);
+  });
 });
