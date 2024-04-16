@@ -13,3 +13,7 @@ Clone this repository using [HTTPS](https://docs.github.com/en/get-started/getti
 ```bash
 git clone https://github.com/flowup/git-workshop.git
 ```
+
+## Legal
+
+Check out our [license terms](./README).
