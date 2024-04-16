@@ -13,3 +13,8 @@ Clone this repository using [HTTPS](https://docs.github.com/en/get-started/getti
 ```bash
 git clone https://github.com/flowup/git-workshop.git
 ```
+
+## Dependencies
+
+- [TypeScript](https://www.npmjs.com/package/typescript)
+- [Jest](https://www.npmjs.com/package/jest)
