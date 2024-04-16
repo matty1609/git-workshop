@@ -7,4 +7,7 @@ describe("sum", () => {
   test("should return result for one number provided", () => {
     expect(sum([1])).toBe(1);
   });
+  test("should add up floats", () => {
+    expect(sum([1 / 3, 0.5])).toBe(0.83);
+  });
 });
