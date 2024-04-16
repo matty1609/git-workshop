@@ -4,4 +4,7 @@ describe("sum", () => {
   test("should add up multiple numbers", () => {
     expect(sum([1, 2, 3, 4])).toBe(10);
   });
+  test("should return result for one number provided", () => {
+    expect(sum([1])).toBe(1);
+  });
 });
