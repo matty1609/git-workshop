@@ -1,6 +1,7 @@
 # Git workshop
 
 In this repository, various exercises for practicing Git and GitHub skills may be found.
+Check out our [contributing guidelines](./CONTRIBUTORS.md).
 
 ## Prerequisites
 
