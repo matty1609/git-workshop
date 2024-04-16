@@ -26,3 +26,9 @@ Build the application via `tsc` or
 ```bash
 npm run build
 ```
+
+Test the application via `npx jest` or
+
+```bash
+npm run test
+```
