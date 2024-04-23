@@ -1,0 +1,29 @@
+name: Feature request
+description: To define a new feature or an enhancement, open a feature request.
+title: 'Feature request'
+body:
+  - type: textarea
+    id: user-story
+    attributes:
+      label: User story
+      description: Here you can phrase your request in a user story format which highlights the added value of the requested feature.
+      placeholder: e.g. As a developer, I want to <request>, so that <added value>.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance criteria
+      description: What requirements should the feature meet? Listing a set of criteria helps determine whether the scope of the request was fully addressed.
+      placeholder: |
+        For example:
+        - [ ] The documentation contains both HTTPS and GIT method of cloning the repository.
+        - [ ] Code snippets with commands for each method are provided.
+    validations:
+      required: true
+  - type: textarea
+    id: implementation-details
+    attributes:
+      label: Implementation details
+      description: If there are any implementation details you would want to point out, feel free to do so here.
+      placeholder: e.g. A link to a 3rd-party library, API specification, wireframes highlighting the change or other.
