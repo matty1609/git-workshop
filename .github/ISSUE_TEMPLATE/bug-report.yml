@@ -1,6 +1,6 @@
 name: Bug report
 description: If you encounter disruptive behaviour, open a bug report.
-title: 'Bug report'
+title: "Bug report"
 body:
   - type: textarea
     id: current-behaviour
