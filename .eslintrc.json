@@ -1,0 +1,16 @@
+{
+  "root": true,
+  "parserOptions": {
+    "project": "tsconfig.json"
+  },
+  "extends": [
+    "@code-pushup/eslint-config/typescript",
+    "@code-pushup/eslint-config/jest"
+  ],
+  "rules": {
+    "jest/consistent-test-it": [
+      "warn",
+      { "fn": "test", "withinDescribe": "test" }
+    ]
+  }
+}
