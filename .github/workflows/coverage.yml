@@ -1,0 +1,41 @@
+name: Coverage
+
+on:
+  workflow_dispatch:
+    inputs:
+      artifact:
+        type: boolean
+      name:
+        type: string
+        default: coverage
+
+jobs:
+  coverage:
+    name: Collect unit test coverage
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run unit tests
+        run: npm run test:coverage
+
+      - name: Compress coverage results into ZIP
+        if: ${{ inputs.artifact }}
+        run: cd coverage && zip -r ../coverage.zip *
+
+      - name: Upload coverage artifact
+        if: ${{ inputs.artifact }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.name }}
+          path: coverage.zip
