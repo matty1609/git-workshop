@@ -1,6 +1,6 @@
 # Git workshop
 
-In this repository, various exercises for practicing Git and GitHub skills may be found.
+In this repository, various exercises for practicing Git and GitHub skills may be found. This is the change for the feat_b.
 
 ## Prerequisites
 
